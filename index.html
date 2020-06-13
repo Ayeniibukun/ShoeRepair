@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shoe Repair.ng</title>
+<!-- Bootstrap -->
+<!-- <link href="../../Project 1/Bootstrap site/css/bootstrap.css" rel="stylesheet"> -->
+<link href="css/bootstrap-3.3.7.css" rel="stylesheet" type="text/css">
+<link href="mystyle.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/all.min.css">
+<script src="script.js"></script>
+<link rel="icon"href="favicon.ico"/>
+</head>
+<body>
+ <body onload="onloadEffect()">
+<!-----------------------------------------------Pre-Loader--------------------------------------------------------->  
+<div class="loader">
+    <img src="images/loading.gif" alt="Loading...">
+  </div>
+<!-----------------------------------------------Sign-in modal--------------------------------------------------------->
+<div class="modal" id="mymodel">
+  <div class= "modal-dialog">
+    <form action="">
+      <div class="modal-content signup animated flipInX">
+        <div class="modal-header">
+          <div class="close" data-dismiss="modal">+</div>
+          <a href="index.html" target="_blank"><img src="Images/Logo.png" alt="logo" width="100" height="100" class="modal-header-img"></a> </div>
+        <div class="modal-body">
+          <input type="text" placeholder="Enter Email" name="email" required>
+          <br>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <p>By creating an account you agree to our <a href="about.html">Terms & Privacy</a>.</p>
+          <button type="submit" class="registerbtn">Sign in</button>
+          <p>You don't have an account <a href="#" data-toggle="modal" data-target="#mymodel1"> Sign up</a>.</p>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<!-----------------------------------------------Sign-up modal---------------------------------------------->
+<div class="modal" id="mymodel1">
+  <div class= "modal-dialog">
+    <form action="">
+      <div class="modal-content signup animated flipInX">
+        <div class="modal-header">
+          <div class="close" data-dismiss="modal">+</div>
+          <a href="index.html" target="_blank"><img src="Images/Logo.png" alt="logo" width="100" height="100" class="modal-header-img"></a> </div>
+        <div class="modal-body">
+          <input type="text" placeholder="Enter Email" name="email" required>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+          <p>By creating an account you agree to our <a href="about.html">Terms & Privacy</a>.</p>
+          <button type="submit" class="registerbtn">Register</button>
+          <p>Already have an account? <a href="#" data-dismiss="modal">Sign in</a>.</p>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-----------------------------------------------Header---------------------------------------------->
+<div class="wrapper">
+    <header class="header animated jackInTheBox delay-.7s">
+      <div class="header-logo"> <img src="Images/Logo.png" alt="logo" width="100" height="100" class="img-responsive"></div>
+      <div class="header-text"> <a href="index.html">
+        <h1><strong>Shoe Repair.ng</strong></h1>
+        </a></div>
+      <div class="header-button"> <a href="cart.html" class="header-button-cart">
+        <input type="button" value="Carts">
+        </a> <a href= "#">
+        <input type="button" data-toggle="modal" data-target="#mymodel" value="Sign-in">
+        </a> <br>
+        <span class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+        </span> 
+      </div>
+    </header>
+   </div>
+   <!-----------------------------------------------HeaderAddress---------------------------------------------->
+<div class="addressBar">
+  <div class="pull-left">
+    <a href=""></a>
+    <a href="#"><i class="fa fa-phone"></i>(+234) - 8120584811</a>
+    <a href="#"><i class="fa fa-map-marker"></i>1064 Bashourn, Ibadan NG</a>
+    <a href="#"><i class="fa fa-clock"></i>09 AM - 6 PM</a>
+</div>
+
+<div class="pull-right">
+  <ul class="header_social">
+      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+      <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+  </ul>
+</div>
+</div>
+   <!-----------------------------------------------Nav-bar---------------------------------------------->
+<div id="navArea">
+  <!-- Brand and toggle get grouped for better mobile display -->   
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>    
+      <div class="header-nav"> <img src="Images/Logo.png" alt="logo" width="30" height="100" class="img-responsive"></div>
+      <a class="navbar-brand" href="index.html">Shoe Repair.NG</a> 
+    </div>
+    
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="topFixedNavbar1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html"  class="active">Home</a></li>
+          <li> <a href="About.html">About us</a></li>
+          <li><a href="Contact.html" >Contact us</a></li>
+          <li><a href="material.html">Buy Materials</a></li>
+          <li><a href="Reflublish.html">Refurblish Now</a></li>
+        </ul>
+      
+  </div> <!-- /.navbar-collapse --> 
+</nav>
+</div>
+<!-----------------------------------------------HeaderAddress---------------------------------------------->
+<div class="addressBar">
+    <div class="pull-left">
+      <a href=""></a>
+      <a href="#"><i class="fa fa-phone"></i>(+234) - 8120584811</a>
+      <a href="#"><i class="fa fa-map-marker"></i>1064 Bashourn, Ibadan NG</a>
+      <a href="#"><i class="fa fa-clock"></i>09 AM - 6 PM</a>
+  </div>
+
+  <div class="pull-right">
+    <ul class="header_social">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+    </ul>
+</div>
+</div>
+  <div class="container">
+        <!-----------------------------------------------Welcome(Section)---------------------------------------------->
+   <h2>Welcome To Shoe Repair.ng</h2>
+   <hr>
+   <div class="row">
+    <div class="wel">
+        <div class="col-md-3 col-xs-6 wel_div">
+          <h4>BROKEN SHOE</h4>
+          <p>if your shoe spoils,do not panic. shoe Repair.ng offers shoe repairs services for your Shoes,Sandals and Slippers</p>
+        </div>
+        <div class="col-md-3 col-xs-6  wel_div">
+          <i class="fas fa-truck-pickup fa-3x"></i>
+          <h4>PICK UP</h4>
+          <p>We schedule pick up from wherever you are for your Shoe,Sandels and Slippers in order to save your energy and money</p>
+        </div>
+        <div class="col-md-3 col-xs-6  wel_div">
+
+          <h4>Shoe Repair.ng</h4>
+          <p> We rest assure you that our well experience cobblers would have your shoe ready in time.</p>
+        </div>
+          <div class="col-md-3 col-xs-6 wel_div">
+            <i class="far fa-comment-dots fa-2x"></i>
+            <h4>CHAT US</h4>
+            <p>Will if you having difficult with using the site or lodge complains you can chat us via Whatsapp: +234 8120584811 Mail us: shoerepairng@gmail.com</p>
+          </div>
+      </div>
+    </div>
+    <!-----------------------------------------------What we repair(Section)---------------------------------------------->
+    <br><br>
+    <h3>What we do on the site</h3>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="main">
+                <div class="service">
+                  <div class="service-logo"> 
+                    <img src="Images/icons/G.png" alt="Placeholder image">
+                  </div>
+                      <h4>Gum it</h4>
+                      <p>We use different types of gums(glues) at Shoe Repair.ng 
+                        to amends broken footwear.With our quality workers we give you
+                        100% neatness with no strain of gum on your products.....with smile we share</p>
+                  </div>
+                  <div class="shadowOne"></div>
+                  <div class="shadowTwo"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="main">
+                <div class="service">
+                  <div class="service-logo"> 
+                    <img src="Images/icons/S.png" alt="Placeholder image">
+                  </div>
+                      <h4>Stitch it</h4>
+                      <p>Lots of energy are spent when stitching up a client footwear because we take hour 
+                        time at shoe Repair.ng to give the client exactly the type of stitch he/she wants to be 
+                        on the footwears</p>
+                  </div>
+                  <div class="shadowOne"></div>
+                  <div class="shadowTwo"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="main">
+                <div class="service">
+                  <div class="service-logo"> 
+                    <img src="Images/icons/P.png" alt="Placeholder image">
+                  </div>
+                      <h4>Polish it</h4>
+                      <p>How lovely would it be if you see your face on the shoe you wearing.Well it possible 
+                        at Shoe Repair.ng because we use the best of equipment to make this all possible...
+                      </p>
+                  </div>
+                  <div class="shadowOne"></div>
+                  <div class="shadowTwo"></div>
+              </div>
+            </div>
+          </div>
+<!-----------------------------------------------SideBar---------------------------------------------->
+               <div id="sideBar">
+                <a href="www.facebook.com" role="button" >
+                  <span class="sideBarMenu" ><img src="images/Logo/fb.png" alt="fblogo" width="32px" height="32px"></span><br>
+                </a>
+                <a href="www.instagram.com" role="button" >
+                  <span class="sideBarMenu" ><img src="images/Logo/instagram.png" alt="fblogo" width="32px" height="32px"></span><br>
+                </a>
+                <a href="www.whatsapp.com" role="button" >
+                  <span class="sideBarMenu" ><img src="images/Logo/whatsapp.png" alt="fblogo" width="32px" height="32px"></span><br>
+                </a>
+                <a href="www.twitter.com" role="button" >
+                  <span class="sideBarMenu" ><img src="images/Logo/twitter.png" alt="fblogo" width="32px" height="32px"></span>
+                </a>
+                <a href="www.github.com" role="button" >
+                  <span class="sideBarMenu" ><img src="images/Logo/github.png" alt="fblogo" width="32px" height="32px"></span><br>
+                </a>
+            </div>
+            <br><br><br><br><br>
+     <!----------------------------------------------- Ads---------------------------------------------->
+     <img src="Images/ads/middle.gif" class="img-rounded img-responsive " alt="Placeholder image">
+
+     <!-----------------------------------------------Reflublish(Model)---------------------------------------------->
+     <div class="rfbModel">
+      <button class="close" onclick="exit()">x </button>
+      <img src="images/ads/rfb.gif" alt="Ads...">
+      
+    </div>
+
+    <!-----------------------------------------------Reflublish(Section)---------------------------------------------->
+     <br><br><br>
+  <h2 onmouseover="rfbAds()">Refurblished Products</h2>
+  <hr>
+  <div class="row">
+     <div class="col-sm-3 col-xs-6 rfb-div">     
+          <div class="rfb-boxs">
+              <span class="box-btn">After</span> 
+          <img src="Images/rfb product/ar.jpg" alt="first Image" >
+      </div>
+
+      <div class="box">
+          <span class="box-btn">Before</span> 
+           <img src="Images/rfb product/a.jpg" alt="Overlay">
+      </div>
+  </div>
+
+        <div class="col-sm-3 col-xs-6 rfb-div">     
+          <div class="rfb-boxs">
+              <span class="box-btn">After</span> 
+          <img src="Images/rfb product/br.jpg" alt="first Image" >
+      </div>
+
+      <div class="box">
+          <span class="box-btn">Before</span> 
+          <img src="Images/rfb product/b.jpg" alt="Overlay">
+      </div>
+    </div>
+     
+        <div class="col-sm-3 col-xs-6 rfb-div">     
+          <div class="rfb-boxs">
+              <span class="box-btn">After</span> 
+          <img src="Images/rfb product/cr.jpg" alt="first Image" >
+      </div>
+
+      <div class="box">
+          <span class="box-btn">Before</span> 
+          <img src="Images/rfb product/c.jpg" alt="Overlay">
+      </div>
+    </div>
+        
+        <div class="col-sm-3 col-xs-6 rfb-div">     
+          <div class="rfb-boxs">
+              <span class="box-btn">After</span> 
+          <img src="Images/rfb product/dr.jpg" alt="first Image" >
+      </div>
+
+      <div class="box">
+          <span class="box-btn">Before</span> 
+          <img src="Images/rfb product/d.jpg" alt="Overlay">
+      </div>
+    </div>
+       
+    <div class="col-sm-3 col-xs-6 rfb-div">     
+      <div class="rfb-boxs">
+          <span class="box-btn">After</span> 
+      <img src="Images/rfb product/er.jpg" alt="first Image" >
+  </div>
+
+  <div class="box">
+      <span class="box-btn">Before</span> 
+       <img src="Images/rfb product/e.jpg" alt="Overlay">
+  </div>
+</div>
+
+            <div class="col-sm-3 col-xs-6 rfb-div">     
+          <div class="rfb-boxs">
+              <span class="box-btn">After</span> 
+          <img src="Images/rfb product/HR.jpg" alt="first Image" >
+      </div>
+
+      <div class="box">
+          <span class="box-btn">Before</span> 
+           <img src="Images/rfb product/H.jpg" alt="Overlay">
+      </div>
+  </div> 
+  
+        <div class="col-sm-3 col-xs-6 rfb-div">     
+          <div class="rfb-boxs">
+              <span class="box-btn">After</span> 
+          <img src="Images/rfb product/IR.jpg" alt="first Image" >
+      </div>
+
+      <div class="box">
+          <span class="box-btn">Before</span> 
+          <img src="Images/rfb product/I.jpg" alt="Overlay">
+      </div>
+    </div>
+
+      <div class="col-sm-3 col-xs-6 rfb-div">     
+        <div class="rfb-boxs">
+            <span class="box-btn">After</span> 
+        <img src="Images/rfb product/GR.jpg" alt="first Image" >
+      </div>
+
+      <div class="box">
+        <span class="box-btn">Before</span> 
+        <img src="Images/rfb product/G.jpg" alt="Overlay">
+      </div>
+    </div>
+  </div>
+  <!-----------------------------------------------How to(Section)---------------------------------------------->
+  <br><br><br>
+  <h2>Shoe Care</h2>
+  <hr>
+  <div class="cardDiv">
+      <div class="row">
+        <div class="col-md-4">  
+          <div class="card animated bounceInDown delay-1s">
+            <img class="card-img-top" src="Images/what we repair.png" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">How to apply gum to an open shoe</h4>
+              <p class="card-text">Apply gum or glue to a footwear is a simple thing to do all you have to do is follow 
+                the following steps...... </p>
+                <a href="style.html" class="section-btn">View more</a>
+            </div>
+        </div>
+      </div>
+        <div class="col-md-4">
+            <div class="card animated bounceInUp delay-1s" >
+            <img class="card-img-top" src="Images/what we repair1.png" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">How to shine Shoe</h4>
+              <p class="card-text">Learn different methods of how shine your shoes with ease all you have to do is follow the experts 
+                foot-steps </p>
+              <a href="style.html" class="section-btn">View more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card animated bounceInRight delay-1s">
+            <img class="card-img-top" src="Images/stitches.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">How to sew a Shoe</h4>
+              <p class="card-text">Sew your footwear like a fashion designer.It only takes a step and you in it.it fine oue Experties
+                would take you through.
+              </p>
+              <a href="style.html" class="section-btn">View more</a>
+            </div>
+
+          </div>
+        </div>
+       </div>
+    </div>
+   <!-----------------------------------------------Recent Product(Section)---------------------------------------------->
+          <br><br><br>
+  <h2>Recent Products</h2>
+  <hr>
+        <div class="row">
+          <div class="col-sm-3 col-xs-6">
+            <div class="card">
+            <img class="card-img-top" src="Images/products/mat-P0.jpg" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">Shoe shines</h4>
+              <p class="card-text">Price: N900</p>
+              <a href="#" class="cart-btn">Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-xs-6">
+          <div class="card">
+          <img class="card-img-top" src="Images/products/mat-p1.jpeg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Shoe Cream</h4>
+            <p class="card-text">Price: N1500</p>
+            <a href="#" class="cart-btn">Cart</a>
+          </div>
+        </div>
+      </div>
+        <div class="col-sm-3 col-xs-6">
+          <div class="card">
+          <img class="card-img-top" src="Images/products/mat-p3.jpeg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Shoe Polish</h4>
+            <p class="card-text">Price: N700</p>
+            <a href="#" class="cart-btn">Cart</a>
+          </div>
+        </div>
+      </div>
+        <div class="col-sm-3 col-xs-6">
+          <div class="card">
+          <img class="card-img-top" src="Images/products/mat-p4.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Shoe insole</h4>
+            <p class="card-text">Price: N2500</p>
+            <a href="#" class="cart-btn">Cart</a>
+          </div>
+        </div>
+      </div>
+     </div>
+   <!--------------------------------Newsletters------------------------------------------------------->
+  <div>
+    <div class="news-section">
+        <div class="news">
+          <h2>Sign up to Newsletter</h2>
+        </div>
+        <div class="news-text">
+          <p>......Helps you the latest about our product put  your e-mail below</p>
+        </div>
+        <input type="email" placeholder="Enter your E-mail"> 
+        <button class="news-btn">Sign up</button> <br><br>
+        <img src="Images/Logo/fb.png" alt="facebook">Facebook
+        <img src="Images/Logo/twitter.png" alt="twitter">Twitter
+        <img src="Images/Logo/whatsapp.png" alt="whatsapp">Whatsapp
+        <img src="Images/Logo/instagram.png" alt="logo">Instagram
+        <img src="Images/Logo/github.png" alt="logo">Guthub
+      </div>
+    </div>
+<hr>
+       <!-----------------------------------------------Ads(Section)---------------------------------------------->
+     <br><br>
+      <div>
+   <img src="Images/ads/footer-ads.gif" class="img-rounded img-responsive full-jumbotron-img" alt="Placeholder image">
+  </div>
+
+  <!-----------------------------------------------MODELS(Section)---------------------------------------------->
+  <br><br>
+  <h3 class="model-text">Role Models</h3>
+  <br><br>
+
+  <div class="container-fluid modelDiv">
+      <div class="row col-img">
+        <div class="col-xs-2 ads-logo col-img"> 
+              <img src="Images/Logo/sowlus logo.jfif" class="img-rounded img-responsive" alt="Placeholder image">
+      </div>
+
+        <div class="col-xs-2 ads-logo col-img">
+                <img src="Images/Logo/misterminit.png" class="img-rounded img-responsive" alt="Placeholder image">
+        </div>
+
+          <div class="col-xs-2 ads-logo col-img">
+                <img src="Images/Logo/MSH-Logo.png" class="img-rounded img-responsive" alt="Placeholder image">
+          </div>
+
+          <div class="col-xs-2 ads-logo col-img">
+              <img src="Images/Logo/ayeen logo.png" class="img-rounded img-responsive" alt="Placeholder image">
+          </div>
+
+          <div class="col-xs-2 ads-logo col-img">   
+              <img src="Images/Logo/aboki.png" class="img-rounded img-responsive" alt="Placeholder image">
+          </div>
+       </div>
+    </div>
+
+   <!--------------------------------Quote of the Day------------------------------------------------------->
+<div class="quoteDiv">
+    <div class="quoteText">
+      <q>It not by the will of man but by the power of God</q>
+      <p class="subText">Axen</p>
+    </div>
+    <div class="quoteText">
+      <q>Good Shoes Take you Good Places</q>
+      <p class="subText">Shoe sprinkles</p>
+    </div>
+    <div class="quoteText">
+      <q>Give the girl the rigth shoe and she can conquer the world</q>
+      <p class="subText">Mariln Monrol</p>
+    </div>
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+  <!-----------------------------------------------Arrow---------------------------------------------->
+  <div class="arrow">
+  <a href="#addressBar">
+    <span class="arrowImg"><img src="images/icons/arrow.png" alt="arrow"></span>
+  </a>
+  </div>  
+   <!--------------------------------Footer------------------------------------------------------->
+<footer class="footer">
+  <div class="container">
+    <div class="footerWidget">
+      <div class="menu">
+        <ul>
+          <li>My Acoount</li>
+          <li>Cart</li>
+          <li>Checkout</li>
+          <li>Returns & Refunds</li>
+          <li>Privacy Policy</li>
+          <li>Terms & conditions</li>
+        </ul>
+      </div>
+      <div class="menu">
+        <ul>
+          <li>Our Story</li>
+          <li>Our Team</li>
+          <li>FAQs</li>
+          <li>Our Impact</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      <div class="menu">
+        <ul>
+          <li>Photo Gallery</li>
+          <li>Blog</li>
+          <li>Checkout</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <p> Copyright <sup>&copy</sup> 2019, Repair site</p>
+  <p>All rights Reserved Developed by Ayeni ibukunoluwa <sup>&reg</sup></p>
+</footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-1.11.3.min.js"></script>
+  <script src="script.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="js/bootstrap.js"></script>
+  </body>
+</html>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.js"></script>

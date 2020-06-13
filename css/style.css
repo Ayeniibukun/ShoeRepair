@@ -1,0 +1,673 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    background:#FBEFE7;
+}
+h3{
+  background-color: #E88D4D;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0 0 0;
+  font-size: 20px;
+}
+p{
+  color: #2F231F;
+  text-align: center;
+  font-size: 15px;
+}
+/************************  Header ****************/
+header{
+    background-color: #E88D4D;
+    color: white;
+    text-align: center;
+    margin: 10px 25px;
+    border-radius: 20px;
+    overflow: auto;
+    margin-top: 50px;
+}
+header:hover{
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.header-logo{
+  float:left;
+  margin: 10px;
+  padding: 15px;
+  box-shadow: 5px 5px 5px black;
+}
+.header-logo:hover{
+  box-shadow: 2px 2px 2px black;
+}
+.header-text{
+  font-family: 'Comic Sans Mas',sans-serif;
+  color: white;
+  font-size: 25px;
+  float: left;
+  padding: 20px 5px;
+}
+.header-text a{
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+.header-text a:hover{
+  text-shadow: 5px 5px 5px black;
+}
+.header-button{
+  font-size: 15px;
+  float: right;
+  margin-top: 50px;
+}
+.header-button a{
+  background-color: #FBEFE7;
+  color: white;
+  text-decoration: none;
+}
+.header-button a input{
+  background-color: #FBEFE7;
+  color: #E88D4D;
+  font-size: 20px;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+}
+.header-button a input:hover{
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+/************************  Nav-bar  ****************/
+.header-sticky {
+    position: fixed;
+    background-color: #443B34;
+    font-size: 20px;
+    height: 30px;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+}
+.header-sticky nav{
+  float: left;
+}
+.header-sticky nav a{
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+.header-sticky nav a:hover{
+  cursor: pointer;
+  background-color:white;
+  color: #6F2E37;
+  font-size: 18px;
+  box-shadow: 5px 5px 5px black;
+  border-radius: 10px;
+}
+.header-sticky img{
+  float: right;
+}
+
+ /************************ Sign in  ****************/
+ .container {
+  background: rgba(0, 0, 0, 0.5);
+  color: #443B34;
+  width: 300px;
+  height: 500px;
+  text-align: center;
+  margin: 100px auto;
+  border-radius: 50px;
+  border: 2px solid#E88D4D;
+}
+.container:hover{
+  box-shadow: 5px 5px 5px black;
+}
+.container img{
+  margin: -40px 0 0 0;
+}
+.container  p{
+  padding: 5px 10px;
+}
+.container a{
+  text-decoration: none;
+  color: rgba(25, 25, 206, 0.973);
+}
+.container a{
+  box-shadow: 2px #ddd;
+}
+input[type=text], input[type=password] {
+  width: 250px;
+  height: 40px;
+  margin: 15px 0 22px 0;
+  display: inline-block;
+  border: none;
+  border-bottom: 2px solid #E88D4D;
+  background: transparent;
+  text-align: center;
+}
+::placeholder{
+  text-align: center;
+  color: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  border-bottom: 2px solid #ddd;
+  outline: none;
+  background: transparent;
+}
+.registerbtn{
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+    color: #E88D4D;
+    padding: 10px 25px;
+    border-radius: 15px;
+
+}
+.registerbtn:hover{
+    cursor: pointer;
+    background-color: #E88D4D;
+    color: #f1f1f1;
+    box-shadow: 2px 2px 2px black;
+}
+
+/************************  Main Section  ****************/
+.main-section{
+  background-color:#FFBFA8;
+  position: relative;
+  height: 500px;
+  width: 100%;
+  margin: 10px 0 0 0;  
+  text-align: center;
+  overflow: hidden;
+  
+}
+/************************  Slidershow  ****************/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  box-sizing: border-box;
+  font-family: Verdana, sans-serif;
+  position: relative;
+  margin: auto;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot .active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/************************  First and Second Section  ****************/
+.first-section, .second-section{
+  background-color: #F2E7EB;
+  height: 500px;
+  font-size: 20px;
+  padding-top: 40px;
+  color: #443B34;
+  margin: 30px 0 0 0;
+}
+.first-section aside, .second-section aside{
+  background-color: #E88D4D;
+  float:left;
+  position: absolute;
+  top: 120%;
+  height:370px;
+  padding:30px;
+  text-align: center; 
+  border-radius: 0px 70px 20px 0px;
+}
+.second-section aside{
+  position: absolute;
+  top: 210%;
+}
+.first-section aside ul, .second-section aside ul{
+list-style-type:none;
+padding: 0px;
+margin: 0px; 
+}
+.first-section aside ul li, .second-section aside ul li{
+color: white;
+font-size: 25px;
+text-decoration:none;
+padding: 15px 20px;
+display: block;
+}
+.first-section aside ul li:hover, .second-section aside ul li:hover{
+  cursor: pointer;
+}
+.sup-section{
+ background-color: #FBEFE7;
+ color: #3A0009;
+ margin: 20px 10% 10px 400px;
+ padding: 10px;
+ text-align: center;
+ border-radius: 50px;
+}
+/************************  Overlay  ****************/
+.overlay{
+  background-color: #f1f1f1;
+  color: #f1f1f1;
+  text-align: center;
+  margin: auto;
+  border-radius: 30px;
+  padding: 10px;
+  float: left;
+  position: absolute;
+  top: 113%;
+  left: 5%;
+}
+.overlay-box {
+	background-color: rgba(0, 0, 0, 0.5);
+  width: 150px;
+  height: 120px;
+  text-align: center;
+  padding: 20px 10px;
+  border-radius: 20px;
+  margin-bottom: 5px;
+}
+.overlay-box img{
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%
+}
+.overlay-box a{
+  text-decoration: none;
+  position: absolute;
+  left: 30%;
+  padding: 10px;
+  margin-top: 40px;
+  font-size: 20px;
+  color: #f1f1f1;
+  display: inline-block;
+}
+.overlay-box a:hover{
+  font-size: 20px;
+  font-weight: 400;
+  background-color:#E88D4D;
+  cursor: pointer;
+  color: #F2E7EB;
+}
+
+/************************  Button  ****************/
+.btn{
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+    color: #6F2E37;
+    padding: 10px 25px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #1E1714;
+    outline: none;
+}
+  .btn:hover{
+    cursor: pointer;
+    background-color: #6F2E37;
+    color: white;
+}
+/************************  Contact   ****************/
+.div-contact{
+  background-color:#6F2E37;
+  color: #f1f1f1;
+  text-align: center;
+}
+.inner-contact{
+  background-color: #FBEFE7;
+  color: #3A0009;
+  font-size: 18px;
+  text-align: center;
+  width: 500px;
+  padding: 10px;
+  margin: auto;
+}
+/************************  About img  ****************/
+.office img{
+  margin: 5px;
+  position: relative;
+  margin-left: 40%;
+
+}
+.image-div{
+  padding: 10px;
+  margin-bottom: 30%;
+}
+.material-div{
+ margin-left: 350px;
+ margin-bottom: 170%;
+}
+.sup-div{
+  border: 3px solid gray;
+  width: 300px;
+  float: left;
+  margin: 5px;
+  text-align: center;
+  color: #3A0009;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.sup-div img{
+  max-width: 100%;
+  max-height:100%;
+  transition: all 1s;
+}
+.sup-div:hover img{
+  border-radius: 15px 15px 0 0;
+  transform: scale(1.1,1.1);
+}
+.desc{
+  padding: 10px;
+  font-size: 20px;
+  font-weight:400;
+}
+/************************Aside Bar in Material**********************/
+.aside{
+  background-color: #E88D4D;
+  height: 600px;
+  width: 300px;
+  border-radius: 0 20px 20px 0;
+  position: absolute;
+  top: 60%;
+}
+.aside-item{
+  background-color: #FBEFE7;
+  text-align: center;
+  height: 400px;
+  width: 300px;
+  border-radius: 20px;
+  margin: 30px;
+  margin-left:-20px ;
+  position:absolute;
+  top:10%;
+}
+.aside-item ul{
+  list-style-type: none;
+}
+.aside-item ul li{
+  font-size: 20px;
+  color: #3A0009;
+  padding: 10px 20px;
+  display: block;
+  margin: 50px;
+}
+.aside-item ul li:hover{
+  cursor: pointer;
+  background-color: #E88D4D;
+  color: #ddd;
+  font-size: 22px;
+  padding: 10px 20px;
+
+}
+/************************ Third section ****************/
+.box-overlay{
+  position: relative;
+  width:60%; 
+  height: 250px;
+  background-color:#F2E7EB;
+  color: #3A0009;
+  text-align: center;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 10px;
+  overflow: hidden;
+  top: -3%;
+}
+.rfb-box, .rfb-box1, .rfb-box2, #box, #box1, #box2{
+  border: 2px solid teal;
+  position: absolute;
+  width: 200px; 
+  height: 200px;
+  margin: auto;
+  margin-left: 20px;
+  display: block;
+  border-radius: 20px;
+  
+}
+#box, #box1, #box2{
+  display: none;
+}
+.rfb-box1, #box1 {
+  position: absolute;
+  left: 30%;
+}
+.rfb-box2, #box2{
+  position: absolute;
+  left: 60%;
+}
+.rfb-box a, .rfb-box1 a, .rfb-box2 a, #box a, #box1 a, #box2 a{
+  background: chocolate;
+  color: white;
+  padding: 10px 20px;
+  margin-left: 90px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.rfb-box img, .rfb-box1 img, .rfb-box2 img, #box img, #box1 img, #box2 img{
+  max-width: 100%;
+  max-height: 100%;
+  background-color: yellow;
+  margin: 12 auto;
+}
+/************************  Reflublish  ****************/
+.rfb-div{
+  background-color: #f1f1f1;
+  color: #f1f1f1;
+  text-align: center;
+  margin: auto;
+  border-radius: 30px;
+  padding: 20px;
+  float: left;
+  margin-top: 10px;
+}
+.box {
+	background-color: rgba(0, 0, 0, 0.5);
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  padding: 20px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.inputfile-1{
+display: none;
+}
+.inputfile-1 + label {
+    color: #f1e5e6;
+    background-color: transparent;
+    margin: 70px auto;
+}
+
+.inputfile-1:focus + label,
+.inputfile-1 + label:hover {
+    background-color: #722040;
+}
+.inputfile-1 + label {
+    max-width: 80%;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 10px 20px;
+}
+
+.inputfile-1 + label svg {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+#rfb .inner-contact{
+  margin-bottom: 250px;
+  margin-top: 100px;
+}
+
+/************************  Newsletter  ****************/
+.news-section{
+  background-color: #1E1714;
+  height: 90px;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.news{
+  background-color: #f1f1f1;
+  color: #3A0009;
+  border-radius: 10px;
+  font-size: 19px;
+  padding: 10px;
+  height: 40px;
+  width: 350px;
+  position: absolute;
+  text-align: center;
+}
+.news h2{
+  position: absolute;
+  left: 20%;
+  top: -3px;
+}
+.news-section p{
+  color: #f1f1f1;
+  margin-top: 10px ;
+  padding: 10px;
+}
+.news-section input[type]{
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ddd;
+  border: none;
+  border-radius: 15px;
+  width: 500px;
+  height: 20px;
+  text-align: center;
+  float: right;
+  margin-top: -20px;
+}
+.news-section input[type]:focus{
+  outline: none;
+  background-color: transparent;
+  border: 2px solid #ddd;
+}
+/*****************************Footer***************************/
+.footer{
+  background-color: #2F231F;  
+  color: #f1f1f1;
+  position: relative;
+  width: 100%;
+}
+.footer-logo{
+  padding: 5px;
+  margin:5px 0 0 0;
+  font-size: 20px;
+}
+.footer-logo h2{
+  color: #f1f1f1;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.footer-logo h2:hover{
+  text-shadow: 5px 5px 5px black;
+  cursor: pointer;
+}
+.address{
+  margin: 0;
+  padding: 0;
+}
+.address ul{
+  list-style-type: none;
+}
+.address ul li{
+  padding:10px 20px ;
+}
+.media{
+  position: absolute;
+  top: 30%;
+  left:90%;
+}
+.footer-link {
+  padding: 0;
+  margin-top: -10%;
+  margin-left: 40%;
+}
+.footer-link a{
+  text-align: center;
+  font-size: 50px;
+  text-decoration: none;
+  color: #f1f1f1;
+}
+.footer-link a:hover{
+  text-shadow:5px 5px 5px black;
+  cursor: pointer;
+  font-size: 60px;
+}
+.footer p{
+  color: #ddd;
+}
+.footer-small{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.footer-small small{
+display: inline;
+padding: 10px;
+}
+@media only screen and (min-width:320px){
+
+}
+
+@media only screen and (min-width:768px) {
+
+}
+
